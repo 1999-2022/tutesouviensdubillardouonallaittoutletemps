@@ -10,6 +10,10 @@
 		z: 600
 	}
 
+	const x = (m, n) => {
+		setTimeout(() => { alert(m)} , n)
+	}
+
 	const plane = new Physijs.BoxMesh(
 		new THREE.BoxGeometry(
 			planeProps.x, planeProps.y, planeProps.z, 1, 1, 1
@@ -88,6 +92,7 @@
 		
 		balls.push(ball)
 	}
+	x("Thank you for waiting.", 300000)
 
 	balls[0].position.set(ballsProps.offset.x + 20, 15, ballsProps.offset.z - 10)
 	balls[1].position.set(ballsProps.offset.x + 10, 15, ballsProps.offset.z - 25)
