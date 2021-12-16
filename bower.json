@@ -1,0 +1,11 @@
+{
+  "name": "tutesouviensdubillardouonallaittoutletemps",
+  "version": "4.2.0",
+  "dependencies": {
+    "threejs": "r70",
+    "physijs": "*"
+  },
+  "resolutions": {
+    "threejs": "r70"
+  }
+}
