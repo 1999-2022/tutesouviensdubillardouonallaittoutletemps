@@ -4,7 +4,7 @@
      */
     const player = game.player
     const raycaster = new THREE.Raycaster()
-    const impulse = 15
+    const impulse = 125
     let mouse = new THREE.Vector2()
     let powerAim
 

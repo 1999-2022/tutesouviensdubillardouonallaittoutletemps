@@ -41,10 +41,10 @@
 	    return border
   	}
 
-  	game.scene.add(borderMesh(-100, 0, 5, 600 - 50))
-  	game.scene.add(borderMesh(100, 0, 5, 600 - 50))
-  	game.scene.add(borderMesh(0, 300, 5, 200 - 50, true))
-  	game.scene.add(borderMesh(0, -300, 5, 200 - 50, true))
+  	game.scene.add(borderMesh(-100, 0, 7.5, 600 - 33))
+  	game.scene.add(borderMesh(100, 0, 7.5, 600 - 33))
+  	game.scene.add(borderMesh(0, 300, 7.5, 200 - 33, true))
+  	game.scene.add(borderMesh(0, -300, 7.5, 200 - 33, true))
 
 	/**
 	 * Balls
@@ -56,7 +56,7 @@
 		radius: 8,
 		segments: 40,
 		rings: 24,
-		mass: 17.5,
+		mass: 100,
 		offset: {
 			x: 0,
 			z: 100
@@ -89,12 +89,12 @@
 		balls.push(ball)
 	}
 
-	balls[0].position.set(0 + ballsProps.offset.x, 100 / 2, ballsProps.offset.z)
-	balls[1].position.set(-30 + ballsProps.offset.x, 100 / 2, ballsProps.offset.z)
-	balls[2].position.set(30 + ballsProps.offset.x, 100 / 2, ballsProps.offset.z)
-	balls[3].position.set(-15 + ballsProps.offset.x, 100 / 2 + 100, ballsProps.offset.z)
-	balls[4].position.set(15 + ballsProps.offset.x, 100 / 2 + 100, ballsProps.offset.z)
-	balls[5].position.set(0 + ballsProps.offset.x, 100 / 2 + (2 * 100), ballsProps.offset.z)
+	balls[0].position.set(ballsProps.offset.x + 20, 15, ballsProps.offset.z - 10)
+	balls[1].position.set(ballsProps.offset.x + 10, 15, ballsProps.offset.z - 25)
+	balls[2].position.set(ballsProps.offset.x, 15, ballsProps.offset.z - 50)
+	balls[3].position.set(ballsProps.offset.x, 15, ballsProps.offset.z - 75)
+	balls[4].position.set(ballsProps.offset.x + 10, 15, ballsProps.offset.z - 100)
+	balls[5].position.set(ballsProps.offset.x + 20, 15, ballsProps.offset.z - 150)
 
 	balls.forEach((ball) => {
 		game.scene.add(ball)

@@ -44,13 +44,13 @@
 	 * Lightning
 	 */
 
-	const dirLight = new THREE.DirectionalLight(0x0038ef, 1)
+	const dirLight = new THREE.DirectionalLight(0x003fff, 1)
     
-    dirLight.position.set(200, 300, 200)
+    dirLight.position.set(-200, 300, 200)
     
     dirLight.castShadow = true
     dirLight.shadowCameraVisible = false
-    dirLight.shadowDarkness = 0.4
+    dirLight.shadowDarkness = 0.5
     dirLight.shadowCameraFov = 60
     dirLight.shadowCameraNear = 10
     dirLight.shadowCameraFar = 800
@@ -66,7 +66,7 @@
 		radius: 8,
 		segments: 24,
 		rings: 24,
-		mass: 10
+		mass: 100
 	}
 
 	const playerGeo = new THREE.SphereGeometry(

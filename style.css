@@ -6,5 +6,23 @@ body {
 }
 
 body {
-    background: linear-gradient(13deg, rgba(0,0,0,1) 0%, rgba(0,24,99,1) 50%, rgba(0,56,224,1) 100%);
+    background: linear-gradient(-40deg, rgba(0,0,0,1) 0%, rgba(0,24,99,1) 25%, rgba(0,56,224,1) 100%);
+    background-size: 200% 200%; 
+    animation: gradientAnim 30s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradientAnim {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    82% {
+        background-position: 25% 10%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
